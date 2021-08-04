@@ -19,7 +19,7 @@ public class WordsServiceImpl implements WordsService {
                     countWords++;
                     continue;
                 }
-                if (!word.substring(0,1).equals(emptyWord)) {
+                if (word.substring(0,1).equals(emptyWord)) {
                     emptyWord = word.substring(word.length() - 1);
                     countWords++;
                 } else break;
