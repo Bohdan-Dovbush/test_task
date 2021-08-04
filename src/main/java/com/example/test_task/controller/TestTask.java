@@ -21,7 +21,6 @@ public class TestTask {
 
     @PostMapping(value = "/game")
     public Words game(@RequestBody Words jWords) {
-        wordsService.checkWords(jWords);
-        return jWords;
+        return wordsService.checkWords(jWords);
     }
 }
